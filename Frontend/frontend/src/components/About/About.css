@@ -1,0 +1,137 @@
+.about-hero {
+  padding: 88px 0;
+  background: var(--ivory);
+}
+
+.about-hero__inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.1rem, 4.5vw, 3rem);
+  margin: 14px 0 20px;
+}
+
+.about-hero p {
+  color: rgba(28, 25, 23, 0.7);
+  margin-bottom: 16px;
+  max-width: 56ch;
+}
+
+.about-hero__stat-card {
+  background: var(--ink);
+  border-radius: var(--radius);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 16px;
+  border-bottom: 1px solid var(--line-on-dark);
+}
+
+.about-stat:last-child {
+  border-bottom: none;
+}
+
+.about-stat__num {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: var(--brass-bright);
+}
+
+.about-stat__label {
+  font-size: 0.8rem;
+  color: rgba(241, 236, 225, 0.65);
+  text-align: right;
+  max-width: 16ch;
+}
+
+.about-values {
+  background: var(--ivory-dim);
+  padding: 88px 0;
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.value-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(122, 46, 46, 0.08);
+  color: var(--rust);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.value-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.value-card p {
+  font-size: 0.88rem;
+  color: rgba(28, 25, 23, 0.65);
+}
+
+.about-location {
+  background: var(--sage-deep);
+  color: var(--ivory);
+}
+
+.about-location__inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 48px 32px;
+}
+
+.about-location__inner svg {
+  color: var(--brass-bright);
+  flex-shrink: 0;
+}
+
+.about-location h2 {
+  font-size: 1.3rem;
+  color: var(--ivory);
+  margin-bottom: 6px;
+}
+
+.about-location p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(241, 236, 225, 0.75);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .about-hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+}
