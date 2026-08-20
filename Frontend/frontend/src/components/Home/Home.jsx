@@ -12,10 +12,10 @@ import {
 import SectionHeading from "../SectionHeading/SectionHeading.jsx";
 import ServiceCard from "../ServiceCard/ServiceCard.jsx";
 import TestimonialCard from "../TestimonialCard/TestimonialCard.jsx";
-import image1 from '../../../assets/hero1.Webp';
-import image2 from '../../../assets/hero 2.Webp';
-import image3 from '../../../assets/hero3.Webp';
-import image4 from '../../../assets/hero 4.Webp';
+import image1 from '../../src/assets/hero1.Webp';
+import image2 from '../../src/assets/hero 2.Webp';
+import image3 from '../../src/assets/hero3.Webp';
+import image4 from '../../src/assets/hero 4.Webp';
 import "./Home.css";
 
 
